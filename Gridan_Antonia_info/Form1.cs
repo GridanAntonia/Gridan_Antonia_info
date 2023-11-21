@@ -25,25 +25,25 @@ namespace Gridan_Antonia_info
         private void label1_Click(object sender, EventArgs e)
         {
             Form2 meridional = new Form2();
-            meridional.Visible = true;
+            meridional.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Form5 test = new Form5();
-            test.Visible = true;
+            test.ShowDialog();
         }
 
         private void orientali_Click(object sender, EventArgs e)
         {
             Form3 oriental = new Form3();
-            oriental.Visible = true;
+            oriental.ShowDialog();
         }
 
         private void occidentali_Click(object sender, EventArgs e)
         {
             Form4 occidental = new Form4();
-            occidental.Visible = true;
+            occidental.ShowDialog();
         }
     }
 }

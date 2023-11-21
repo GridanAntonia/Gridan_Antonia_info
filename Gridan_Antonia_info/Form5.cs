@@ -29,7 +29,15 @@ namespace Gridan_Antonia_info
                 p++;
             if (radioButton2.Checked == true) p++;
             if (radioButton5.Checked == true) p++;
-            MessageBox.Show("Scorul tau este de " + p.ToString() + " puncte");
+            if (p == 0)
+                MessageBox.Show("Mai trebuie să te documentezi!");
+            else
+            {
+                if (p > 1)
+                    MessageBox.Show("Scorul tau este de " + p.ToString() + " puncte");
+                if (p == 1)
+                    MessageBox.Show("Scorul tau este de " + p.ToString() + " punct");
+            }
         }
     }
 }
